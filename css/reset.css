@@ -1,0 +1,45 @@
+
+	*{margin: 0;padding: 0;}
+	img{vertical-align: top;max-width:100%;}
+	li{list-style: none;}
+	address{font-style: normal;}
+	table{border-collapse:collapse;}
+
+	/*float 된 부모요소한테 적용시켜주세요.*/	
+	.clear:after{content:'';display: block;clear: both;}
+	
+	/*기본 스타일 */	
+	body{font-family: '나눔고딕',sans-serif;
+		color: #333;
+		font-size: 16px;
+		line-height: 1.5em;}
+
+	a{text-decoration: none;}
+
+	/*그리드 레이아웃(1200그리드용)*/
+	.col1{width:80px;}
+	.col2{width: 180px;}
+	.col3{width: 280px;}
+	.col4{width: 380px;}
+	.col5{width:480px;}
+	.col6{width: 580px;}
+	.col7{width: 680px;}
+	.col8{width: 780px;}
+	.col9{width: 880px;}
+	.col10{width:980px;}
+	.col11{width:1080px;}
+	.col12{width: 1180px;}	
+	
+	.container>*[class^="col"]{float: left;
+	margin:0 10px;
+	box-sizing:border-box;
+	position: relative;
+	}
+
+	.container:after{content:'';display: block;clear: both;}
+		
+	/*사용자 스타일*/
+	.tl{text-align: left;}
+	.tc {text-align: center;}
+	.tr{text-align: right;}
+	

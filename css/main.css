@@ -1,0 +1,189 @@
+.container{width: 1200px;
+		margin: 0 auto;}
+
+		/*프로덕트 스타일*/
+		.titlearea{position: absolute;
+		width: 300px;
+		z-index:100;
+		}
+
+		.productwrap{width: 100%;
+		height: 600px;
+		}
+
+		.box{width: 260px;
+		height: 260px;
+		background-color: #fff;
+		float: left;
+		overflow: hidden;
+		border-radius:30px 0 30px 0;
+		margin: 10px;
+		border: 2px solid #fff;
+		transition:all 0.3s ease-out;
+		}
+
+		.box img{width: 200px;height: 200px;
+		margin: 10px auto;}
+
+		.box:hover{border: 2px solid #ee2e24;}
+
+		.productwrap ul li .box:first-child{background-color: transparent;border: 0;}
+
+		/*.box:first-child{background-color: GREEN;
+		border:0;}*/
+
+		
+		.quickmenu{position: fixed;
+		right:0 ;
+		top:50%;
+		margin-top: -50px;
+		width: 50px;
+		height: 100px;
+		background-color: #fff;
+		text-align: center;
+		z-index:999;
+		display: none;
+		}
+
+		.quickmenu>a{width: 50px;
+		height: 50px;
+		display: block;
+		font-size: 0;}
+
+		.quickmenu>a:first-child{background:#fff url(../images/btn_top.png) 50% 50% no-repeat;}
+
+		.quickmenu>a:last-child{background:#fff url(../images/btn_top.png) 50% 50% no-repeat;
+		transform:rotate(-180deg);}
+		
+		/*fullpage 에서 스크롤바 감춘 값을 무시하고 적용시키기 위해 !importantn 사용*/
+		body{overflow-y: hidden !important;}/*스크롤바 감추기를 적용하라!*/
+
+		#video{position: absolute;
+		width: 100%;
+		height: 100%;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		z-index: 10;
+		background-color: #000;
+		object-fit:cover;}/*검정색 바탕 나오는게 싫을 때 적용해주는 기능이며, IE에서는 지원되지 않음*/
+
+		.section{margin-top: 0;}
+
+		.section h2{font-size: 2.4em;
+		line-height: 1.1em;
+		padding-bottom: 10px;
+		letter-spacing: -0.03em;/*폰트 크기가 18px이상으로 클때 자간간격 조정으로 가독성 높임*/
+		}
+
+		.section p{margin-bottom: 40px;}
+		.section.brand{color: #fff;}
+		.section.brand h2, .section.brand h2+p{text-align: center;}
+
+		.txt{height: 260px;
+		position: relative;
+		background-color: #fff;
+		padding: 20px;
+		box-sizing:border-box;
+		cursor:pointer;
+		}
+
+		.txt h3{font-size: 1.8em;
+		letter-spacing: -0.03em;
+		color: #000;
+		margin-bottom: 20px;}
+		
+		.txt p{color: #333;
+		line-height: 1.5em;
+		text-align: left;}
+
+		.txt span{display: block;
+		position: absolute;
+		bottom: 30px;
+		left: 20px;
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		border-radius:20px;
+		border: 1px solid #ee2e24;
+		color: #ee2e24;
+		text-align: center;
+		transition:all 0.3s ease-out;
+		}
+
+		.txt:hover span{background-color: #ee2e24;color: #fff;}
+
+		/*sns*/
+		
+		.youtube{margin-top: 116px;}
+.
+		.snslist{margin-top: 20px;
+		overflow: hidden;}
+		
+		.snslist>li{width: 260px;
+		height: 260px;
+		float: left;
+		margin: 0 auto;
+		}
+
+		.snslist>li img{width: 100%;
+		height: 100%;
+		transition:all 0.5s ease-out;}
+
+		.snslist>li:hover img{transform:scale(1.1);}
+		
+		/*corporate social*/
+		.corporate h2, .corporate p{text-align: center;}
+
+		.socialmenu>li{position: relative;}
+
+		.socialmenu>li:before{content:'';display: block;
+		width: 100%;height: 100%;
+		position: absolute;
+		background-color: rgba(0,0,0,0);
+		transition:all 0.3s ease-out;}
+
+		.socialmenu>li img{width: 100%;}
+
+		.socialmenu>li h3{position: absolute;
+		left: 0;top: 0;
+		width: 100%;
+		height: 100%;
+		box-sizing:border-box;
+		padding-top: 270px;
+		text-align: center;
+		color: #fff;
+		font-size: 1.8em;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;}
+
+		.socialmenu>li:first-child h3{background-image: url(../images/social_icon1.png);}
+
+		.socialmenu>li:nth-child(2) h3{background-image: url(../images/social_icon2.png);}
+
+		.socialmenu>li:last-child h3{background-image: url(../images/social_icon3.png);}
+
+		.socialmenu>li:hover:before{background-color: rgba(0,0,0,0.3);}
+
+		/*footer*/
+		.foot{background-color: #333;
+		color: #fff;
+		line-height: 1.5em;
+		padding: 40px 0;}
+
+		.btn{margin: 10px 0;}
+
+		.foot a{color: #fff;display: inline-block;}
+
+		/*bxSlider 스타일 오버레이*/
+		.bx-wrapper{box-shadow:none;border: 0;
+		background-color: transparent;}
+
+		/*product bxslider 이전 다음 버튼 위치 조정*/
+		.products .bx-wrapper .bx-controls-direction a{top: 25%;}
+		.procucts .bx-wrapper .bx-prev{left: 0;}
+		.procucts .bx-wrapper .bx-next{right: 500px;}
+
+		/*brand bxslider 스타일 이전, 다음 버튼 위치 조정*/
+		.brand .xx-wrapper .bx-prev{left: -60px;}
+		.brand .bx-wrapper .bx-next{right: -60px;}
